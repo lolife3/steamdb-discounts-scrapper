@@ -7,7 +7,7 @@ from datetime import datetime
 
 def main():
     current_time = datetime.now().strftime("%Y.%m.%d %Hh%Mm") 
-    path = r"C:\Users\antek\python_Projects\testing_python\scrapper\chromedriver.exe"
+    path = r"PATH\chromedriver.exe"
     driver = webdriver.Chrome(path)
 
 
