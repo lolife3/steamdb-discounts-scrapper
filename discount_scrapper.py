@@ -11,13 +11,7 @@ from datetime import datetime
 
 
 def main():
-
-    #path = r"PATH"
-    #driver = webdriver.Chrome(path)
-    #driver.maximize_window()
-    
     current_time = datetime.now().strftime("%Y.%m.%d %Hh%Mm") 
-    
     chrome_options = uc.ChromeOptions()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
