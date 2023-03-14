@@ -65,8 +65,8 @@ def main():
         ls = list(filter(None, ls))
 
     
-    result = pd.DataFrame(zip(list_of_titles, list_of_new_prices, list_of_discounts, list_of_old_prices, list_of_dates)) 
-    result.columns = ["Title","NewPrice", "Discount", "OldPrice", "CreationDate"]
+    result = pd.DataFrame(zip(list_of_titles, list_of_discounts, list_of_new_prices)) 
+    result.columns = ["Title","Discount", "NewPrice"]
     result.to_csv(f"discounts/{str(current_time)} discounts.csv", index=False)
 
 
